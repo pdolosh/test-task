@@ -1,0 +1,97 @@
+.add-money-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 360px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.add-btn {
+  width: 100%;
+  border-radius: 100px;
+  color: #f5cc82;
+  background-color: #353535;
+  border: none;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.add-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  background: #fffdfa;
+
+  p {
+    margin: 0;
+    padding: 8px 16px;
+    border: 1px solid #e1dcd0;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+}
+
+.add-card-button {
+  display: flex;
+  gap: 15px;
+  padding-top: 15px;
+  align-items: center;
+
+  .button__text {
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+  .add-money-container {
+    flex-direction: column-reverse;
+    width: auto;
+  }
+
+  .add-btn {
+    margin-top: 77px;
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .add-money-container {
+    flex-direction: column-reverse;
+    width: auto;
+  }
+
+  .add-btn__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .add-btn {
+    margin-top: 18px;
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1919px) {
+  .add-btn {
+    width: 284px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .add-btn {
+    width: 360px;
+  }
+}

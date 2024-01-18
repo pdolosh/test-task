@@ -1,0 +1,45 @@
+.tabs-list {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.tab {
+  &__link {
+    border-radius: 30px;
+    font-size: 20px;
+    color: #F5CC82;
+    font-weight: 700;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+
+    &--selected {
+      background-color: #282828;
+
+    }
+  }
+
+  &__link-text {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .tabs-list {
+    gap: 10px;
+    padding-left: 0px,
+  }
+  .tab__link-text {
+    padding: 0 22px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+ 
+}

@@ -1,0 +1,119 @@
+.transactions {
+  font-family: "Arial", sans-serif;
+  max-width: 894px;
+  padding: 20px;
+
+  .transactions-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .tab-group {
+      display: flex;
+      margin-bottom: 20px;
+
+      .tab {
+        background: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-right: 10px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border: 1px solid #db9e2f;
+        color: #db9e2f;
+
+        &.active {
+          background: #db9e2f;
+          color: white;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .show-more {
+      background-color: #333;
+      color: #f5cc82;
+      padding: 4px 24px;
+      border-radius: 20px;
+      cursor: pointer;
+      height: 40px;
+      border: none;
+    }
+  }
+
+  .transaction-list {
+    .transaction-item {
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        &.expense {
+          background: #fdf1dc;
+        }
+        &.income {
+          background: #F5CC82;
+        }
+      }
+
+      .details__wrapper {
+        display: flex;
+        gap: 25px;
+      }
+
+      .details {
+        display: flex;
+        flex-direction: column;
+
+        .merchant {
+          font-size: 20px;
+          color: #282828;
+          font-weight: 600;
+          font-family: "Poppins", sans-serif;
+        }
+
+        .date {
+          color: #282828;
+          font-size: 16px;
+        }
+      }
+
+      .amount {
+        font-weight: bold;
+
+        &.expense {
+          color: #d9534f;
+        }
+
+        &.income {
+          color: #0F9D58;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+  .transactions {
+    padding: 0;
+  }
+}

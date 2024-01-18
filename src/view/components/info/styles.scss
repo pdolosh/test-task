@@ -1,0 +1,38 @@
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 18px;
+
+  &__initial {
+    font-size: 16px;
+    font-weight: 500;
+    color: #F5CC82;
+  }
+}
+
+.profile {
+  font-size: 16px;
+  font-weight: 500;
+  color: #F5CC82;
+}
+
+@media (max-width: 767px) {
+  .profile {
+    display: none;
+  }
+  .dropdown {
+    display: none;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profile {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+ 
+}

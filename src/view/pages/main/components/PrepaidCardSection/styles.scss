@@ -1,0 +1,100 @@
+.prepaid-card-container{
+  padding: 20px;
+}
+
+.prepaid-card-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.prepaid-card {
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 10px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  height: 156px;
+  min-width: 272px;
+}
+
+.status-tag {
+  background-color: #FDF1DC;
+  border-radius: 10px;
+  color: #BE8317;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px 10px;
+  width: fit-content;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.balance-info {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.balance-text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.balance-number {
+  margin: 0;
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+}
+
+.card-number {
+  font-size: 18px;
+  text-align: left;
+}
+
+
+.new-card {
+  margin-left: 10px; 
+  background-color: #f8f6f2;
+  border: 1px solid #E1DCD0;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  height: 156px;
+  min-width: 272px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+}
+
+.add-icon {
+  width: 40px; 
+  height: 40px; 
+  cursor: pointer;
+}
+
+.new-card-text {
+  color: #282828;
+  margin-top: 20px; 
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+  .prepaid-card-container {
+    overflow: scroll;
+    padding: 0;
+  }
+}

@@ -1,0 +1,28 @@
+.main-content {
+  width: 1250px;
+}
+
+
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+  .main-content {
+    width: 100%;
+  }
+}
+
+/* Styles for screens between 768 and 1023 pixels */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Your CSS styles for screens between 768 and 1023 pixels go here */
+}
+
+/* Styles for screens between 1024 and 1919 pixels */
+@media only screen and (min-width: 1024px) {
+  .first__row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// /* Styles for screens 1920 pixels and above */
+// @media only screen and (min-width: 1920px) {
+//   /* Your CSS styles for screens 1920 pixels and above go here */
+// }
